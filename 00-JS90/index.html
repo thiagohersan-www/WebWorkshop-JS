@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8">
     <title>Thiago Hersan</title>
-    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <script src="js.js"></script>
   </head>
 
   <body onclick="changeBackground()">
@@ -25,15 +26,4 @@
       <p>CSS é a maneira inteligente para formatar o conteúdo de um site. Também é muito legal.</p>
     </h4>
   </body>
-
-  <script>
-    function getRandomColor() {
-      return '#'+Math.random().toString(16).substr(-6);
-    }
-
-    function changeBackground(c) {
-      var newColor = c || getRandomColor();
-      document.body.style.backgroundColor = newColor;
-    }
-  </script>
 </html>

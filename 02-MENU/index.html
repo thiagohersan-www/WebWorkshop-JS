@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8">
     <title>Java Script</title>
-    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <script src="js.js"></script>
   </head>
 
   <body>
@@ -19,19 +20,4 @@
       <img id="myImage" src="imgs/img00.jpg">
     </div>
   </body>
-
-  <script>
-    function hideMenu() {
-      document.getElementById('menu').style.left = '-150px';
-    }
-    function showMenu() {
-      document.getElementById('menu').style.left = '0';
-    }
-
-    function changeImage(imgNumber) {
-      var nSrc = 'imgs/img'+imgNumber+'.jpg';
-      document.getElementById('myImage').setAttribute('src', nSrc);
-      hideMenu();
-    }
-  </script>
 </html>
