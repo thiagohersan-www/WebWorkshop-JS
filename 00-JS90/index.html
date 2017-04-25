@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Thiago Hersan</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+  </head>
+
+  <body onclick="changeBackground()">
+    <h1>
+      <img src="imgs/caveira.gif">
+      Thiago Hersan
+      <img src="imgs/caveira.gif">
+    </h1>
+
+    <h4>
+      <img src="imgs/coracao.gif">
+      <a href="https://www.w3schools.com/html/" target="_blank">HTML</a>
+      <p>Site com material didático sobre HTML. Vários truques e tutoriais. Muito bom para quem está começando.</p>
+    </h4>
+
+    <h4>
+      <img src="imgs/coracao.gif">
+      <a href="https://www.w3schools.com/css/" target="_blank">CSS</a>
+      <p>CSS é a maneira inteligente para formatar o conteúdo de um site. Também é muito legal.</p>
+    </h4>
+  </body>
+
+  <script>
+    function getRandomColor() {
+      return '#'+Math.random().toString(16).substr(-6);
+    }
+
+    function changeBackground(c) {
+      var newColor = c || getRandomColor();
+      document.body.style.backgroundColor = newColor;
+    }
+  </script>
+</html>

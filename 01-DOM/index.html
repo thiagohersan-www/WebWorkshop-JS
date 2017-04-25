@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Java Script</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+  </head>
+
+  <body>
+    <div>
+      <img src="imgs/img00.jpg" onclick="choose(this)">
+      <img src="imgs/img01.jpg" onclick="choose(this)">
+      <img src="imgs/img02.jpg" onclick="choose(this)">
+    </div>
+
+    <img id="my-image" src="imgs/img02.jpg">
+  </body>
+
+  <script>
+    function choose(el) {
+      var newSrc = el.getAttribute("src");
+      document.getElementById("my-image").setAttribute("src", newSrc);
+      beat(el);
+    }
+
+    function beat(el) {
+      el.style.width = '300px';
+      setTimeout(function(){el.style.width = '256px';}, 200);
+    }
+  </script>
+</html>

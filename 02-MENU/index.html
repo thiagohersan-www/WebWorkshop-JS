@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Java Script</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+  </head>
+
+  <body>
+    <div id="menu-icon" onclick="showMenu()">&#9776;</div>
+    <div id="menu">
+      <div id="close-icon" onclick="hideMenu()">X</div>
+      <div class="menu-item" onclick="changeImage('00')">Opção 1</div>
+      <div class="menu-item" onclick="changeImage('01')">Opção 2</div>
+      <div class="menu-item" onclick="changeImage('02')">Opção 3</div>
+    </div>
+
+    <div class="image-container">
+      <img id="myImage" src="imgs/img00.jpg">
+    </div>
+  </body>
+
+  <script>
+    function hideMenu() {
+      document.getElementById('menu').style.left = '-150px';
+    }
+    function showMenu() {
+      document.getElementById('menu').style.left = '0';
+    }
+
+    function changeImage(imgNumber) {
+      var nSrc = 'imgs/img'+imgNumber+'.jpg';
+      document.getElementById('myImage').setAttribute('src', nSrc);
+      hideMenu();
+    }
+  </script>
+</html>

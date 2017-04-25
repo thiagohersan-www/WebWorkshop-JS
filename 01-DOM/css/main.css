@@ -1,0 +1,21 @@
+body {
+  margin: 8px;
+}
+
+img + img {
+  margin-top: 10px;
+}
+
+img {
+  display: block;
+  width: 256px;
+  transition: width 0.2s;
+}
+
+#my-image {
+  width: 70%;
+  position: absolute;
+  top: 8px;
+  left: 22%;
+  z-index: -10;
+}
